@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+</head>
+<body>
+
+
+    <style>
+ .box {
+    font-size: 40px;
+    background-color: blue;
+    color: white;
+    display: none;
+ }
+@media(max-width:300px){
+    #Iteam1{
+        display: block;
+        color: darkgoldenrod;
+    }
+}
+@media(min-width:301px) and (max-width:600px){
+    #Iteam2{
+        display: block;
+        color: chartreuse;
+    }
+}
+@media(min-width:601px) and (max-width:900px){
+    #Iteam3{
+        display: block;
+        color: darksalmon;
+    }
+}
+@media(min-width:901px) {
+    #Iteam4{
+        display: block;
+        color: gold;
+    }
+}
+
+
+
+
+</style>
+   <div id="Iteam1" class="box">mobile screen min 300px</div>
+   <div id="Iteam2" class="box">tab screen 301px to 600px</div>
+   <div id="Iteam3" class="box">desktop screen 601 to 900px</div>
+   <div id="Iteam4" class="box">Large screen 90001 above</div>
+
+    
+</body>
+</html>
